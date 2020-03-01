@@ -1,0 +1,92 @@
+body {
+    background-image: url("../assets/img/fondo_mar.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.5rem;
+    color: #212529;
+}
+
+.card {
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 30%;
+    background-color: #4caf50;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
+    body {
+        padding: 50px 0;
+        font-size: 1.5rem;
+    }
+    .card {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: Landscape) {
+    body {
+        padding: 50px 0;
+        font-size: 1rem;
+    }
+    .card {
+        width: 30%;
+        height: 50%;
+    }
+}
+
+@media only screen and (min-device-width: 425px) and (max-device-width: 823px) and (orientation: portrait) {
+    body {
+        padding: 50px 0;
+        font-size: 2rem;
+    }
+    .card {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-device-width: 425px) and (max-device-width: 823px) and (orientation: Landscape) {
+    body {
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+    .card {
+        width: 35%;
+        height: 50%;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+    body {
+        padding: 50px 0;
+        font-size: 1rem;
+    }
+    .card {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: Landscape) {
+    body {
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+    .card {
+        width: 35%;
+        height: 50%;
+    }
+}

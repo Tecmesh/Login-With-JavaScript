@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <!--Enlazar la hoja de Estilos-->
+</head>
+
+<body>
+
+    <!-- Formulario de autenticación de usuarios -->
+
+    <div class="container">
+        <div class="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form action="usuario/usuario.html">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="usuario"> Usuario: </label>
+                        <input type="text" class="form-control" name="usuario" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="contrasena"> Contraseña: </label>
+                        <input type="password" class="form-control" name="contrasena" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="recordarme">Recuerdame: </label>
+                        <input type="checkbox" value="false" onclick="VerifyCheck()" class="form-check" name="recordarme" id="recordarme">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
