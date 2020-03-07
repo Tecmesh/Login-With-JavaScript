@@ -30,8 +30,8 @@ function UserDataInit() {
 
         {
             "id": 2,
-            "username": "yeremy12",
-            "email": "yeremy12@hotmail.com",
+            "username": "jeremy12",
+            "email": "Jeremy12@hotmail.com",
             "password": "password123",
             "name": "Jeremy Peguero",
             "gender": "M",
@@ -40,10 +40,10 @@ function UserDataInit() {
 
         {
             "id": 3,
-            "username": "ronnieNFS",
+            "username": "ronnienfs",
             "email": "ronnieNFS@hotmail.com",
             "password": "password123",
-            "name": "Ronnie Anonimo",
+            "name": "Ronnie Batista",
             "gender": "M",
             "activo": true
         },
@@ -125,7 +125,7 @@ function VerifyCheck() {
 document.querySelector("form").onsubmit = function(e) { //El parametro 'e', hace referencia al evento.
     e.preventDefault(); //Hacemos que el formulario no envie la info a otra pagina.
 
-    var usuario = e.target.elements.usuario.value; //Recuperamos el valor del input 'usuario'.
+    var usuario = e.target.elements.usuario.value.toLowerCase().trim(); //Recuperamos el valor del input 'usuario'.
     var password = e.target.elements.contrasena.value; //Recuperamos el valor del input 'contrasena'.
     var recordarme = e.target.elements.recordarme.value; //Recuperamos el valor del input checkbox 'recordarme'.
     var url = e.target.action; //Recuperamos el valor de la url al cual debía ir el formulario.
